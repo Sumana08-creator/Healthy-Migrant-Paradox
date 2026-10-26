@@ -1,0 +1,55 @@
+STAGE 39: BINARY LOGISTIC REGRESSION
+====================================
+Sample size: 1373 
+Outcome: Fair or worse health = 1
+Reference group: Non-migrant background
+Adjustment: Age
+Survey variance specification: provisional
+
+Model summary:
+
+Call:
+svyglm(formula = health_binary ~ migration_group + agea, design = design, 
+    family = quasibinomial())
+
+Survey design:
+survey::svydesign(ids = ~1, weights = ~anweight, data = data)
+
+Coefficients:
+                                                    Estimate Std. Error t value
+(Intercept)                                         -2.89921    0.27630 -10.493
+migration_groupFirst-generation migrant background   0.02645    0.17140   0.154
+migration_groupSecond-generation migrant background  0.21353    0.21994   0.971
+agea                                                 0.02533    0.00437   5.796
+                                                    Pr(>|t|)    
+(Intercept)                                          < 2e-16 ***
+migration_groupFirst-generation migrant background     0.877    
+migration_groupSecond-generation migrant background    0.332    
+agea                                                8.42e-09 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for quasibinomial family taken to be 1.016301)
+
+Number of Fisher Scoring iterations: 4
+
+
+Odds ratios and 95% confidence intervals:
+                                                term    estimate standard_error
+                                         (Intercept) -2.89920645    0.276301889
+  migration_groupFirst-generation migrant background  0.02645422    0.171401035
+ migration_groupSecond-generation migrant background  0.21353136    0.219940002
+                                                agea  0.02533055    0.004370353
+ odds_ratio   conf_low  conf_high      p_value
+  0.0550669 0.03204038 0.09464192 9.313127e-26
+  1.0268072 0.73381978 1.43677390 8.773408e-01
+  1.2380423 0.80448654 1.90525100 3.316171e-01
+  1.0256541 1.01690597 1.03447747 6.791705e-09
+
+LIMITATIONS
+- This is a secondary binary-outcome sensitivity analysis.
+- The original five-category health outcome remains the primary outcome.
+- The binary outcome loses information about health severity.
+- The study is observational and cross-sectional.
+- The survey variance specification remains provisional.
+- Results should not be interpreted causally.

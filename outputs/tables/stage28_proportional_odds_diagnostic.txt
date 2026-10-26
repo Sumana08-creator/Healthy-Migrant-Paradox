@@ -1,0 +1,97 @@
+STAGE 28: PROPORTIONAL-ODDS DIAGNOSTIC
+Eligible respondents: 1380 
+
+Proportional-odds model:
+formula: health_ordered ~ migration_group
+data:    model_data
+
+ link  threshold nobs     logLik  AIC     niter max.grad cond.H 
+ logit flexible  746.9393 -820.99 1653.97 6(0)  2.71e-08 9.5e+01
+
+Coefficients:
+                                                    Estimate Std. Error z value
+migration_groupFirst-generation migrant background   -0.3079     0.1599  -1.926
+migration_groupSecond-generation migrant background  -0.2941     0.1966  -1.496
+                                                    Pr(>|z|)  
+migration_groupFirst-generation migrant background     0.054 .
+migration_groupSecond-generation migrant background    0.135  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Threshold coefficients:
+               Estimate Std. Error z value
+Very good|Good  -0.8338     0.1012  -8.242
+Good|Fair        1.4157     0.1118  12.664
+Fair|Bad         3.5476     0.2421  14.656
+Bad|Very bad     5.6083     0.6479   8.656
+
+Non-proportional model:
+formula: health_ordered ~ migration_group
+nominal: ~migration_group
+data:    model_data
+
+ link  threshold nobs     logLik  AIC     niter max.grad cond.H 
+ logit flexible  746.9393 -819.67 1663.35 20(0) 2.68e-09 9.2e+10
+
+Coefficients: (2 not defined because of singularities)
+                                                    Estimate Std. Error z value
+migration_groupFirst-generation migrant background        NA         NA      NA
+migration_groupSecond-generation migrant background       NA         NA      NA
+                                                    Pr(>|z|)
+migration_groupFirst-generation migrant background        NA
+migration_groupSecond-generation migrant background       NA
+
+Threshold coefficients:
+                                                                   Estimate
+Very good|Good.(Intercept)                                         -0.87373
+Good|Fair.(Intercept)                                               1.47748
+Fair|Bad.(Intercept)                                                3.62416
+Bad|Very bad.(Intercept)                                            5.33053
+Very good|Good.migration_groupFirst-generation migrant background   0.37762
+Good|Fair.migration_groupFirst-generation migrant background        0.17330
+Fair|Bad.migration_groupFirst-generation migrant background         0.19973
+Bad|Very bad.migration_groupFirst-generation migrant background     0.87504
+Very good|Good.migration_groupSecond-generation migrant background  0.38983
+Good|Fair.migration_groupSecond-generation migrant background       0.10778
+Fair|Bad.migration_groupSecond-generation migrant background       -0.02499
+Bad|Very bad.migration_groupSecond-generation migrant background   19.21201
+                                                                   Std. Error
+Very good|Good.(Intercept)                                                 NA
+Good|Fair.(Intercept)                                                      NA
+Fair|Bad.(Intercept)                                                       NA
+Bad|Very bad.(Intercept)                                                   NA
+Very good|Good.migration_groupFirst-generation migrant background          NA
+Good|Fair.migration_groupFirst-generation migrant background               NA
+Fair|Bad.migration_groupFirst-generation migrant background                NA
+Bad|Very bad.migration_groupFirst-generation migrant background            NA
+Very good|Good.migration_groupSecond-generation migrant background         NA
+Good|Fair.migration_groupSecond-generation migrant background              NA
+Fair|Bad.migration_groupSecond-generation migrant background               NA
+Bad|Very bad.migration_groupSecond-generation migrant background           NA
+                                                                   z value
+Very good|Good.(Intercept)                                              NA
+Good|Fair.(Intercept)                                                   NA
+Fair|Bad.(Intercept)                                                    NA
+Bad|Very bad.(Intercept)                                                NA
+Very good|Good.migration_groupFirst-generation migrant background       NA
+Good|Fair.migration_groupFirst-generation migrant background            NA
+Fair|Bad.migration_groupFirst-generation migrant background             NA
+Bad|Very bad.migration_groupFirst-generation migrant background         NA
+Very good|Good.migration_groupSecond-generation migrant background      NA
+Good|Fair.migration_groupSecond-generation migrant background           NA
+Fair|Bad.migration_groupSecond-generation migrant background            NA
+Bad|Very bad.migration_groupSecond-generation migrant background        NA
+
+Likelihood-ratio comparison:
+Likelihood ratio tests of cumulative link models:
+ 
+                      formula:                         nominal:         link:
+proportional_model    health_ordered ~ migration_group ~1               logit
+nonproportional_model health_ordered ~ migration_group ~migration_group logit
+                      threshold:
+proportional_model    flexible  
+nonproportional_model flexible  
+
+                      no.par    AIC  logLik LR.stat df Pr(>Chisq)
+proportional_model         6 1654.0 -820.99                      
+nonproportional_model     12 1663.3 -819.67  2.6282  6     0.8539

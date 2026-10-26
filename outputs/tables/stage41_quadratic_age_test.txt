@@ -1,0 +1,24 @@
+STAGE 41: QUADRATIC AGE TERM TEST
+=================================
+Sample size: 1373 
+Survey variance specification: provisional
+
+Wald test:
+Wald test for I(age_centered^2)
+ in svyglm(formula = health_binary ~ migration_group + age_centered + 
+    I(age_centered^2), design = design, family = quasibinomial())
+F =  11.31671  on  1  and  1368  df: p= 0.00078938 
+
+Quadratic term summary:
+ sample_size quadratic_estimate standard_error odds_ratio_per_squared_unit
+        1373       0.0006643125   0.0001974751                    1.000665
+ wald_statistic numerator_degrees_of_freedom denominator_degrees_of_freedom
+       11.31671                            1                           1368
+    p_value
+ 0.00078938
+
+LIMITATIONS
+- This test uses a provisional survey variance specification.
+- Statistical significance does not by itself establish better predictive performance.
+- The quadratic term tests one particular form of nonlinearity.
+- The analysis is observational and does not establish causation.

@@ -1,0 +1,33 @@
+STAGE 29: MODEL DIAGNOSTIC SUMMARY
+==================================
+
+Stage 27: Unadjusted ordinal regression
+----------------------------------------
+The model fitted successfully using anweight.
+The variance-estimation design remains provisional.
+The proportional-odds assumption has not been conclusively verified.
+
+Stage 28: Proportional-odds diagnostic
+--------------------------------------
+The likelihood-ratio comparison reported:
+LR statistic = 2.6282
+Degrees of freedom = 6
+p-value = 0.8539
+
+Important limitations:
+1. The more flexible model reported a numerically singular Hessian.
+2. Standard errors for the flexible model were undefined.
+3. Only five respondents reported very bad health.
+4. The nonsignificant comparison does not prove proportional odds.
+5. The survey variance-estimation approach remains provisional.
+6. The diagnostic comparison used case weights and is not a final
+   survey-design-adjusted test.
+
+Recommended next actions:
+1. Verify the Swiss ESS survey design from authoritative documentation.
+2. Document sparse health categories and assess model stability.
+3. Examine missingness in age, education, and income.
+4. Only then fit and assess adjusted regression models.
+
+No new regression was fitted by this script.
+No source data were modified.

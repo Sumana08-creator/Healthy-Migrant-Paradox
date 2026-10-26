@@ -1,0 +1,7 @@
+HEALTHY MIGRANT PARADOX: DATA VALIDATION SUMMARY
+Original observations: 50,116
+Original variables: 376
+Swiss respondents: 1,384
+This is an initial working dataset.
+ESS special response codes still require verification.
+No inferential analysis has been conducted.

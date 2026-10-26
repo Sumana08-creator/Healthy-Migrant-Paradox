@@ -1,0 +1,47 @@
+﻿# Private ESS respondent-level data
+/data/raw/
+/data/processed/
+
+# Local Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# R temporary and session files
+.Rhistory
+.RData
+.Rproj.user/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary and log files
+*.tmp
+*.log
+
+# Editor settings
+.vscode/
+.idea/
+
+# Respondent-level data and working datasets
+/data/synthetic/
+/outputs/tables/switzerland_migration_classification.csv
+/outputs/tables/switzerland_working_data.csv
+
+
+# Individual-level model samples
+/outputs/tables/stage35_age_adjusted_model_sample.csv
+/outputs/tables/stage38_binary_health_sensitivity_sample.csv
+
+
+# Temporarily exclude output CSVs until reviewed
+/outputs/**/*.csv
+
+# Local documentation backup
+/README_backup.md
+
+# Local backups created before making R scripts portable
+src/backup_before_portable_paths/

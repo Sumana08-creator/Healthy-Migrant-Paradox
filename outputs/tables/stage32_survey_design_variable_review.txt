@@ -1,0 +1,63 @@
+STAGE 32: SWISS ESS SURVEY DESIGN REVIEW
+========================================
+Dataset rows: 1381 
+
+Variable: pspwght 
+Missing: 0 
+Unique non-missing values: 42 
+Minimum: 0.8000064 
+Maximum: 1.693711 
+Mean: 1.000191 
+
+Variable: pweight 
+Missing: 0 
+Unique non-missing values: 1 
+Minimum: 0.5410855 
+Maximum: 0.5410855 
+Mean: 0.5410855 
+
+Variable: anweight 
+Missing: 0 
+Unique non-missing values: 42 
+Minimum: 0.4328719 
+Maximum: 0.9164424 
+Mean: 0.541189 
+
+Variable: dweight 
+Missing: 0 
+Unique non-missing values: 1 
+Minimum: 1 
+Maximum: 1 
+Mean: 1 
+
+Variable: prob 
+Missing: 0 
+Unique non-missing values: 1 
+Minimum: 0.0004059765 
+Maximum: 0.0004059765 
+Mean: 0.0004059765 
+
+Variable: stratum 
+Missing: 0 
+Unique non-missing values: 7 
+Minimum: 199 
+Maximum: 205 
+Mean: 201.21 
+
+Variable: psu 
+Missing: 0 
+Unique non-missing values: 1381 
+Minimum: 2766 
+Maximum: 4149 
+Mean: 3458.698 
+
+Stratum frequencies:
+
+199 200 201 202 203 204 205 
+274 349 176 206 188 147  41 
+
+PSU frequency summary:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+      1       1       1       1       1       1 
+
+Maximum absolute weight identity difference: 0 

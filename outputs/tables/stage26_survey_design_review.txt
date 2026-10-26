@@ -1,0 +1,97 @@
+STAGE 26: SURVEY DESIGN REVIEW
+==============================
+
+Dataset dimensions: 1381 rows; 377 columns
+
+----------------------------------
+Variable: cntry 
+Class: character 
+Missing values: 0 
+Distinct nonmissing values: 1 
+Value frequencies:
+x
+  CH 
+1381 
+
+----------------------------------
+Variable: pspwght 
+Class: numeric 
+Missing values: 0 
+Distinct nonmissing values: 42 
+Minimum: 0.8000064 
+Maximum: 1.693711 
+Mean: 1.000191 
+
+----------------------------------
+Variable: pweight 
+Class: numeric 
+Missing values: 0 
+Distinct nonmissing values: 1 
+Minimum: 0.5410855 
+Maximum: 0.5410855 
+Mean: 0.5410855 
+
+----------------------------------
+Variable: anweight 
+Class: numeric 
+Missing values: 0 
+Distinct nonmissing values: 42 
+Minimum: 0.4328719 
+Maximum: 0.9164424 
+Mean: 0.541189 
+
+----------------------------------
+Variable: dweight 
+Class: numeric 
+Missing values: 0 
+Distinct nonmissing values: 1 
+Minimum: 1 
+Maximum: 1 
+Mean: 1 
+
+----------------------------------
+Variable: prob 
+Class: numeric 
+Missing values: 0 
+Distinct nonmissing values: 1 
+Minimum: 0.0004059765 
+Maximum: 0.0004059765 
+Mean: 0.0004059765 
+
+----------------------------------
+Variable: stratum 
+Class: integer 
+Missing values: 0 
+Distinct nonmissing values: 7 
+Minimum: 199 
+Maximum: 205 
+Mean: 201.21 
+Value frequencies:
+x
+199 200 201 202 203 204 205 
+274 349 176 206 188 147  41 
+
+----------------------------------
+Variable: psu 
+Class: integer 
+Missing values: 0 
+Distinct nonmissing values: 1381 
+Minimum: 2766 
+Maximum: 4149 
+Mean: 3458.698 
+Number of unique PSU values: 1381 
+First 15 values:
+ [1] 3223 3949 3271 3740 3787 3894 2981 3276 3711 2958 4009 3399 3151 3018 4031
+
+Weight identity check:
+Valid rows: 1381 
+Maximum absolute difference between anweight and pspwght * pweight: 0 
+
+Interpretation limits:
+- This script describes the recorded variables only.
+- Variable names alone do not establish their correct use
+  for variance estimation.
+- The appropriate Swiss ESS survey design must be confirmed
+  from authoritative documentation before inferential analysis.
+- No regression, confidence intervals, or significance tests
+  were performed.

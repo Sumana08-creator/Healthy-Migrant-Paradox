@@ -1,0 +1,44 @@
+STAGE 36: AGE-ADJUSTED ORDINAL REGRESSION
+=========================================
+Sample size: 1373 
+Survey variance specification: provisional
+
+Model summary:
+Call:
+svyolr(health_ordered ~ migration_group + agea, design = design, 
+    method = "logistic")
+
+Coefficients:
+                                                           Value  Std. Error
+migration_groupFirst-generation migrant background  -0.156686593 0.121436664
+migration_groupSecond-generation migrant background -0.001915095 0.163961571
+agea                                                 0.026176442 0.002991695
+                                                        t value
+migration_groupFirst-generation migrant background  -1.29027419
+migration_groupSecond-generation migrant background -0.01168015
+agea                                                 8.74970237
+
+Intercepts:
+               Value   Std. Error t value
+Very good|Good  0.4963  0.1701     2.9184
+Good|Fair       2.8661  0.1924    14.8935
+Fair|Bad        5.0240  0.2415    20.8056
+Bad|Very bad    7.0923  0.4764    14.8877
+
+Coefficient results (excluding ordinal thresholds):
+                                                term     estimate
+  migration_groupFirst-generation migrant background -0.156686593
+ migration_groupSecond-generation migrant background -0.001915095
+                                                agea  0.026176442
+ standard_error     z_value      p_value odds_ratio  conf_low conf_high
+    0.121436664 -1.29027419 1.969555e-01  0.8549720 0.6738805  1.084728
+    0.163961571 -0.01168015 9.906808e-01  0.9980867 0.7237713  1.376370
+    0.002991695  8.74970237 2.139162e-18  1.0265221 1.0205204  1.032559
+
+INTERPRETATION LIMITATIONS
+- This is an observational cross-sectional analysis.
+- Estimates are associations, not causal effects.
+- Proportional odds has not been conclusively verified.
+- The very-bad-health category contains only five respondents.
+- Survey variance estimation remains provisional.
+- Results must be checked for numerical stability.
